@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+  <div class="bg"></div>
+  <div class="container">
+    <div class="content">
+      <header class="header">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a class="navbar-link" href="../index.html">Главная</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="articles.html">Статьи</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="contacts.html">Контакты</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="gallery.html">Галерея</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="page-nav.html">Навигация</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link active" href="registration.html">Регистрация</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <form action="https://tests.fomenko.top/echo/index.php" method="GET">
+        <fieldset class="fs">
+          <legend>О себе</legend>
+          <div class="form-group">
+            <label for="family">Фамилия</label>
+            <input class="field log" name="lgn" id="family" type="text" placeholder="Фамилия" value="Фамилия">
+          </div>
+          <div class="form-group">
+            <label for="name">Имя</label>
+            <input class="field log" name="lgn" id="name" type="text" placeholder="Имя" value="Имя">
+          </div>
+          <div class="form-group">
+            <label for="soname">Отчество</label>
+            <input class="field log" name="lgn" id="soname" type="text" placeholder="Отчество" value="Отчество">
+          </div>
+          <div class="form-group">
+            <label class="form" for="file">Фотография</label>
+            <input name="file" id="file" type="file">
+          </div>
+          <div class="form-group">
+            <label class="form" for="email">Email</label>
+            <input class="field" name="email" id="email" type="email" placeholder="Введите адрес почты">
+          </div>
+          <div class="form-group">
+            <label class="form" for="passw">Пароль</label>
+            <input class="field" name="psw" id="passw" type="password" placeholder="Введите пароль" minlength="3"
+              maxlength="12">
+          </div>
+          <div class="form-group">
+            <label class="form" for="url">Адрес сайта</label>
+            <input class="field" id="url" name="url" type="url" value="http://mysite.name">
+          </div>
+        </fieldset>
+        <fieldset class="fs">
+          <legend>Укажите ваш пол</legend>
+          <div class="form-group">
+            <input class="form" value="gender-male" id="gender-male" type="radio" name="gender">
+            <label class="field" for="gender-male">Мужской</label>
+          </div>
+          <div class="form-group">
+            <input class="form" value="gender-female" id="gender-female" type="radio" name="gender">
+            <label class="field" for="gender-female">Женский</label>
+          </div>
+        </fieldset>
+        <fieldset class="fs">
+          <div class="form-group">
+            <label class="form" for="date">Дата вашего рождения</label>
+            <input type="date" name="date" id="date">
+          </div>
+        </fieldset>
+        <fieldset class="fs">
+          <legend>Выберите предпочитаемый жанр фильм</legend>
+          <div class="form-group">
+            <input class="form" checked name="kit" value="com" id="com" type="checkbox">
+            <label for="com">Комедии</label>
+          </div>
+          <div class="form-group">
+            <input class="form" name="kit" value="fight" id="fight" type="checkbox">
+            <label for="fight">Боевики</label>
+          </div>
+          <div class="form-group">
+            <input class="form" name="kit" value="det" id="det" type="checkbox">
+            <label for="det">Детективы</label>
+          </div>
+          <div class="form-group">
+            <input class="form" name="kit" value="tr" id="tr" type="checkbox">
+            <label for="tr">Триллеры</label>
+          </div>
+          <div class="form-group">
+            <input class="form" name="kit" value="sp" id="sp" type="checkbox">
+            <label for="sp">Спортивные</label>
+          </div>
+        </fieldset>
+        <fieldset class="fs">
+          <legend>Комментарии</legend>
+          <div class="form-group">
+            <label class="form" for="multitext">Напишите о себе</label>
+            <textarea class="field" name="txt" id="multitext" cols="60" rows="7"
+              placeholder="Введите подробную информацию..."></textarea>
+          </div>
+        </fieldset>
+        <fieldset class="fs">
+          <div class="form-group">
+            <button class="btn" type="submit" value="Регистрация">Регистрация</button>
+          </div>
+          <div class="form-group">
+            <button class="btn" type="reset" value="Сбросить">Сбросить</button>
+          </div>
+        </fieldset>
+      </form>
+      <footer class="footer">
+        &copy; Alex Shkrud
+      </footer>
+    </div>
+  </div>
+
+</body>
+
+</html>
